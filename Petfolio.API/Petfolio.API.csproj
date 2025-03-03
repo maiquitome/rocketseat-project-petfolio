@@ -16,4 +16,8 @@
     <ProjectReference Include="../Petfolio.communication/Petfolio.communication.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers/" />
+  </ItemGroup>
+
 </Project>
