@@ -20,4 +20,12 @@ public class PetController : ControllerBase
             value: response
         );
     }
+
+    [HttpPut]
+    [Route("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    public IActionResult Update([FromRoute] int id, [FromBody] RequestPetJson request)
+    {
+        return NoContent();
+    }
 }
