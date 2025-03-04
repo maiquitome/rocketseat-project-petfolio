@@ -11,7 +11,7 @@ public class PetController : ControllerBase
 {
     [HttpPost]
     [ProducesResponseType(typeof(ResponseRegisteredPetJson), StatusCodes.Status201Created)]
-    public IActionResult Register([FromBody] RequestRegisterPetJson request)
+    public IActionResult Register([FromBody] RequestPetJson request)
     {
         ResponseRegisteredPetJson response = RegisterPetUseCase.Execute(request);
 
