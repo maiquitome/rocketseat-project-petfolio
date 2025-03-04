@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Petfolio.Application.UseCases.Pets.Register;
+using Petfolio.Application.UseCases.Pets.Update;
 using Petfolio.communication.Requests;
 using Petfolio.communication.Responses;
 
@@ -26,6 +27,8 @@ public class PetController : ControllerBase
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     public IActionResult Update([FromRoute] int id, [FromBody] RequestPetJson request)
     {
+        UpdatePetUseCase.Execute(id, request);
+
         return NoContent();
     }
 }
