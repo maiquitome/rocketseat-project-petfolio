@@ -33,4 +33,13 @@ public class PetController : ControllerBase
 
         return NoContent();
     }
+
+    [HttpGet]
+    // [ProducesResponseType(typeof(List<ResponseShortPetJson>), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ResponseAllPetJson), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    public IActionResult GetAll([FromRoute] int id, [FromBody] RequestPetJson request)
+    {
+        return Ok();
+    }
 }
