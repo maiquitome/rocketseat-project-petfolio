@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Petfolio.Application.UseCases.Pet.Register;
+using Petfolio.Application.UseCases.Pets.Register;
 using Petfolio.communication.Requests;
 using Petfolio.communication.Responses;
 

@@ -1,7 +1,7 @@
 using Petfolio.communication.Requests;
 using Petfolio.communication.Responses;
 
-namespace Petfolio.Application.UseCases.Pet.Register;
+namespace Petfolio.Application.UseCases.Pets.Register;
 
 public class RegisterPetUseCase
 {
