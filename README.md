@@ -1,6 +1,8 @@
 # PetFolio
 
-**NÍVEL 4 da Formação C# e .NET Core da @Rocketseat**
+## NÍVEL 4 da Formação C# e .NET Core da Rocketseat
+
+**Organização de projetos e bibliotecas**
 
 O objetivo aqui é demonstrar que o projeto deve ser organizado em camadas distintas.
 
